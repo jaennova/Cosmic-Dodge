@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Cosmic-Dodge">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Cosmic-Dodge.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
