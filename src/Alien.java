@@ -8,7 +8,7 @@ public class Alien {
     private int yPos = 544;
     private int width = 48;
     private int height = 48;
-
+    private int speed = 8;
     // Getters and Setters
     public int getxPos() {
         return xPos;
@@ -44,9 +44,16 @@ public class Alien {
 
     // Alien movement controls
     public void moveUp() {
-        yPos -= 5;
+        yPos -= speed;
         if (yPos < 0) {
             yPos = 0;
+        }
+    }
+
+    public void moveDown() {
+        yPos += speed;
+        if (yPos > 554) {
+            yPos = 554;
         }
     }
 
@@ -54,22 +61,15 @@ public class Alien {
         this.alien = newImage;
     }
 
-    public void moveDown() {
-        yPos += 5;
-        if (yPos > 554) {
-            yPos = 554;
-        }
-    }
-
     public void moveRight() {
-        xPos += 5;
+        xPos += speed;
         if (xPos > 254) {
             xPos = 254;
         }
     }
 
     public void moveLeft() {
-        xPos -= 5;
+        xPos -= speed;
         if (xPos < 0) {
             xPos = 0;
         }
